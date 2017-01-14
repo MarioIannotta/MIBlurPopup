@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACC0DE6F1E2A955000B72A23 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE6E1E2A955000B72A23 /* PopupViewController.swift */; };
 		ACCCB4E41E2A3E29006F63B5 /* MIBlurPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCB4E31E2A3E29006F63B5 /* MIBlurPopup.swift */; };
 		ACCCB4F11E2A3E39006F63B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCB4E61E2A3E39006F63B5 /* AppDelegate.swift */; };
 		ACCCB4F21E2A3E39006F63B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCCB4E71E2A3E39006F63B5 /* Assets.xcassets */; };
 		ACCCB4F31E2A3E39006F63B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCCB4E81E2A3E39006F63B5 /* LaunchScreen.storyboard */; };
 		ACCCB4F41E2A3E39006F63B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCCB4EA1E2A3E39006F63B5 /* Main.storyboard */; };
 		ACCCB4F51E2A3E39006F63B5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACCCB4EC1E2A3E39006F63B5 /* Info.plist */; };
-		ACCCB4F61E2A3E39006F63B5 /* PopupContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCB4EE1E2A3E39006F63B5 /* PopupContentViewController.swift */; };
-		ACCCB4F71E2A3E39006F63B5 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCB4EF1E2A3E39006F63B5 /* PopupViewController.swift */; };
 		ACCCB4F81E2A3E39006F63B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCB4F01E2A3E39006F63B5 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ACC0DE6E1E2A955000B72A23 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		ACCCB4BF1E2A1BD9006F63B5 /* MIBlurPopupDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIBlurPopupDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCCB4E31E2A3E29006F63B5 /* MIBlurPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIBlurPopup.swift; sourceTree = "<group>"; };
 		ACCCB4E61E2A3E39006F63B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +26,6 @@
 		ACCCB4E91E2A3E39006F63B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACCCB4EB1E2A3E39006F63B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACCCB4EC1E2A3E39006F63B5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACCCB4EE1E2A3E39006F63B5 /* PopupContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupContentViewController.swift; sourceTree = "<group>"; };
-		ACCCB4EF1E2A3E39006F63B5 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		ACCCB4F01E2A3E39006F63B5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,22 +70,13 @@
 			children = (
 				ACCCB4EC1E2A3E39006F63B5 /* Info.plist */,
 				ACCCB4E61E2A3E39006F63B5 /* AppDelegate.swift */,
+				ACC0DE6E1E2A955000B72A23 /* PopupViewController.swift */,
 				ACCCB4F01E2A3E39006F63B5 /* ViewController.swift */,
 				ACCCB4E71E2A3E39006F63B5 /* Assets.xcassets */,
 				ACCCB4E81E2A3E39006F63B5 /* LaunchScreen.storyboard */,
 				ACCCB4EA1E2A3E39006F63B5 /* Main.storyboard */,
-				ACCCB4ED1E2A3E39006F63B5 /* Popup */,
 			);
 			path = MIBlurPopupDemo;
-			sourceTree = "<group>";
-		};
-		ACCCB4ED1E2A3E39006F63B5 /* Popup */ = {
-			isa = PBXGroup;
-			children = (
-				ACCCB4EE1E2A3E39006F63B5 /* PopupContentViewController.swift */,
-				ACCCB4EF1E2A3E39006F63B5 /* PopupViewController.swift */,
-			);
-			path = Popup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,10 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACCCB4F81E2A3E39006F63B5 /* ViewController.swift in Sources */,
-				ACCCB4F61E2A3E39006F63B5 /* PopupContentViewController.swift in Sources */,
 				ACCCB4F11E2A3E39006F63B5 /* AppDelegate.swift in Sources */,
 				ACCCB4E41E2A3E29006F63B5 /* MIBlurPopup.swift in Sources */,
-				ACCCB4F71E2A3E39006F63B5 /* PopupViewController.swift in Sources */,
+				ACC0DE6F1E2A955000B72A23 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +315,7 @@
 				ACCCB4D31E2A1BD9006F63B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

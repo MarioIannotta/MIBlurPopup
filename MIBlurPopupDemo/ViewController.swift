@@ -26,9 +26,25 @@ class ViewController: UITableViewController {
 
     // MARK: - IBActions
     
-    @IBAction func showButtonTapped(_ sender: Any) {
+    @IBAction func animationDurationStepperValueChanged(_ sender: Any) {
         
-        let popupViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PopupViewController") as! PopupViewController
+        guard let stepper = sender as? UIStepper else { return }
+        
+        animationDurationTextField.text = String(stepper.value)
+        
+    }
+    @IBAction func initialScaleAmmountStepperValueChanged(_ sender: Any) {
+        
+        guard let stepper = sender as? UIStepper else { return }
+        
+        initialScaleAmmountTextField.text = String(stepper.value)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: nil)
+        
+        guard let popupViewController = segue.destination as? PopupViewController else { return }
         
         switch blurStyleSegmentControl.selectedSegmentIndex {
             
@@ -48,22 +64,6 @@ class ViewController: UITableViewController {
         popupViewController.customAnimationDuration = TimeInterval(animationDurationTextField.text!)
         popupViewController.customInitialScaleAmmount = CGFloat(Double(initialScaleAmmountTextField.text!)!) // https://www.youtube.com/watch?v=TH_JRjJtNSw
         
-        MIBlurPopup.show(popupViewController, on: self)
-        
-    }
-    
-    @IBAction func animationDurationStepperValueChanged(_ sender: Any) {
-        
-        guard let stepper = sender as? UIStepper else { return }
-        
-        animationDurationTextField.text = String(stepper.value)
-        
-    }
-    @IBAction func initialScaleAmmountStepperValueChanged(_ sender: Any) {
-        
-        guard let stepper = sender as? UIStepper else { return }
-        
-        initialScaleAmmountTextField.text = String(stepper.value)
         
     }
     

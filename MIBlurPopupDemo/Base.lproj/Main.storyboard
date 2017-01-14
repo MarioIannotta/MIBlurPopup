@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="xUD-yV-HvU">
             <objects>
-                <tableViewController id="Vd0-C1-ZIF" customClass="ViewController" customModule="PopupWithBlurBackgroundPresenterDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Vd0-C1-ZIF" customClass="ViewController" customModule="MIBlurPopupDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DPC-Ty-KTx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,7 +219,7 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="showButtonTapped:" destination="Vd0-C1-ZIF" eventType="touchUpInside" id="kxE-hH-yuT"/>
+                                                        <segue destination="HI1-R6-fZ5" kind="custom" customClass="MIBlurPopupSegue" customModule="MIBlurPopupDemo" customModuleProvider="target" id="LMr-hZ-ntr"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -253,7 +253,7 @@
         <!--Popup View Controller-->
         <scene sceneID="V27-6f-5qh">
             <objects>
-                <viewController storyboardIdentifier="PopupViewController" id="HI1-R6-fZ5" customClass="PopupViewController" customModule="PopupWithBlurBackgroundPresenterDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopupViewController" id="HI1-R6-fZ5" customClass="PopupViewController" customModule="MIBlurPopupDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3HJ-IV-uof"/>
                         <viewControllerLayoutGuide type="bottom" id="fxt-Hc-hX0"/>
@@ -325,10 +325,10 @@
             </objects>
             <point key="canvasLocation" x="1005.6" y="354.87256371814095"/>
         </scene>
-        <!--Popup Content View Controller-->
+        <!--View Controller-->
         <scene sceneID="h84-lz-I0v">
             <objects>
-                <viewController id="fEf-qw-vzL" customClass="PopupContentViewController" customModule="PopupWithBlurBackgroundPresenterDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fEf-qw-vzL" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7vq-M9-nSr"/>
                         <viewControllerLayoutGuide type="bottom" id="t5S-qC-Wg7"/>
@@ -360,9 +360,6 @@
                             <constraint firstItem="t5S-qC-Wg7" firstAttribute="top" secondItem="Bha-gH-Ycf" secondAttribute="bottom" id="wKG-uO-JIt"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="dismissButton" destination="QB4-Bu-qp6" id="PuM-2B-GLq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqW-Uz-gWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

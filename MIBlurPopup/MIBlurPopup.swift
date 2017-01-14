@@ -131,6 +131,16 @@ open class MIBlurPopup: NSObject {
     
 }
 
+open class MIBlurPopupSegue: UIStoryboardSegue {
+    
+    open override func perform() {
+        
+        MIBlurPopup.show(destination, on: source)
+        
+    }
+    
+}
+
 extension MIBlurPopup: UIViewControllerTransitioningDelegate {
     
     // MARK: - UIViewControllerTransitioningDelegate
