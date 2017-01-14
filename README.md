@@ -12,6 +12,7 @@ MIBlurPopup lets you create amazing popups with a blurred background
 2. Make sure the view controller you want to present conforms the protocol ```MIBlurPopupDelegate```
 3. Present the view controller with: ```MIBlurPopup.show(popupViewController, on: <some view controller>)``` or just set ```MIBlurPopupSegue``` as your custom segue's class like that
 <br/><img src="ReadmeResources/customSegue.png" width="400"/>
+**NB:** If you have added MIBlurPopup through pod, you also have to set the Module as MIBlurPopup".
 
 # Customization
 You can customize the popup behavior with the MIBlurPopupDelegate protocol

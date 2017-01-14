@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		61D291FEE439B48B5FA450B4 /* Pods_PopupWithBlurBackgroundPresenterDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF659CBF1246EFA9C8A5FA8 /* Pods_PopupWithBlurBackgroundPresenterDemo.framework */; };
 		ACC0DE6F1E2A955000B72A23 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE6E1E2A955000B72A23 /* PopupViewController.swift */; };
-		ACCCB4E41E2A3E29006F63B5 /* MIBlurPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCB4E31E2A3E29006F63B5 /* MIBlurPopup.swift */; };
 		ACCCB4F11E2A3E39006F63B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCB4E61E2A3E39006F63B5 /* AppDelegate.swift */; };
 		ACCCB4F21E2A3E39006F63B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCCB4E71E2A3E39006F63B5 /* Assets.xcassets */; };
 		ACCCB4F31E2A3E39006F63B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCCB4E81E2A3E39006F63B5 /* LaunchScreen.storyboard */; };
@@ -24,7 +23,6 @@
 		9FF659CBF1246EFA9C8A5FA8 /* Pods_PopupWithBlurBackgroundPresenterDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopupWithBlurBackgroundPresenterDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC0DE6E1E2A955000B72A23 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		ACCCB4BF1E2A1BD9006F63B5 /* MIBlurPopupDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIBlurPopupDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACCCB4E31E2A3E29006F63B5 /* MIBlurPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIBlurPopup.swift; sourceTree = "<group>"; };
 		ACCCB4E61E2A3E39006F63B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACCCB4E71E2A3E39006F63B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACCCB4E91E2A3E39006F63B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 		ACCCB4B61E2A1BD8006F63B5 = {
 			isa = PBXGroup;
 			children = (
-				ACCCB4E21E2A3E29006F63B5 /* MIBlurPopup */,
 				ACCCB4E51E2A3E39006F63B5 /* MIBlurPopupDemo */,
 				ACCCB4C01E2A1BD9006F63B5 /* Products */,
 				995991506E3CC4BE49893592 /* Pods */,
@@ -79,14 +76,6 @@
 				ACCCB4BF1E2A1BD9006F63B5 /* MIBlurPopupDemo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		ACCCB4E21E2A3E29006F63B5 /* MIBlurPopup */ = {
-			isa = PBXGroup;
-			children = (
-				ACCCB4E31E2A3E29006F63B5 /* MIBlurPopup.swift */,
-			);
-			path = MIBlurPopup;
 			sourceTree = "<group>";
 		};
 		ACCCB4E51E2A3E39006F63B5 /* MIBlurPopupDemo */ = {
@@ -229,7 +218,6 @@
 			files = (
 				ACCCB4F81E2A3E39006F63B5 /* ViewController.swift in Sources */,
 				ACCCB4F11E2A3E39006F63B5 /* AppDelegate.swift in Sources */,
-				ACCCB4E41E2A3E29006F63B5 /* MIBlurPopup.swift in Sources */,
 				ACC0DE6F1E2A955000B72A23 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
