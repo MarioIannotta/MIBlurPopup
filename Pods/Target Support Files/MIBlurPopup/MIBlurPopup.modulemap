@@ -1,0 +1,6 @@
+framework module MIBlurPopup {
+  umbrella header "MIBlurPopup-umbrella.h"
+
+  export *
+  module * { export * }
+}

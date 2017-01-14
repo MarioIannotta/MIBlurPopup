@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61D291FEE439B48B5FA450B4 /* Pods_PopupWithBlurBackgroundPresenterDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF659CBF1246EFA9C8A5FA8 /* Pods_PopupWithBlurBackgroundPresenterDemo.framework */; };
 		ACC0DE6F1E2A955000B72A23 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE6E1E2A955000B72A23 /* PopupViewController.swift */; };
 		ACCCB4E41E2A3E29006F63B5 /* MIBlurPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCB4E31E2A3E29006F63B5 /* MIBlurPopup.swift */; };
 		ACCCB4F11E2A3E39006F63B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCB4E61E2A3E39006F63B5 /* AppDelegate.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EC1DA707AFCA715CDBB878E /* Pods-PopupWithBlurBackgroundPresenterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopupWithBlurBackgroundPresenterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopupWithBlurBackgroundPresenterDemo/Pods-PopupWithBlurBackgroundPresenterDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2759B3B3D4D666C096217773 /* Pods-PopupWithBlurBackgroundPresenterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopupWithBlurBackgroundPresenterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopupWithBlurBackgroundPresenterDemo/Pods-PopupWithBlurBackgroundPresenterDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9FF659CBF1246EFA9C8A5FA8 /* Pods_PopupWithBlurBackgroundPresenterDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopupWithBlurBackgroundPresenterDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC0DE6E1E2A955000B72A23 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		ACCCB4BF1E2A1BD9006F63B5 /* MIBlurPopupDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIBlurPopupDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCCB4E31E2A3E29006F63B5 /* MIBlurPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIBlurPopup.swift; sourceTree = "<group>"; };
@@ -34,18 +38,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D291FEE439B48B5FA450B4 /* Pods_PopupWithBlurBackgroundPresenterDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64BB32909BED86DEEAFE7864 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FF659CBF1246EFA9C8A5FA8 /* Pods_PopupWithBlurBackgroundPresenterDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		995991506E3CC4BE49893592 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EC1DA707AFCA715CDBB878E /* Pods-PopupWithBlurBackgroundPresenterDemo.debug.xcconfig */,
+				2759B3B3D4D666C096217773 /* Pods-PopupWithBlurBackgroundPresenterDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ACCCB4B61E2A1BD8006F63B5 = {
 			isa = PBXGroup;
 			children = (
 				ACCCB4E21E2A3E29006F63B5 /* MIBlurPopup */,
 				ACCCB4E51E2A3E39006F63B5 /* MIBlurPopupDemo */,
 				ACCCB4C01E2A1BD9006F63B5 /* Products */,
+				995991506E3CC4BE49893592 /* Pods */,
+				64BB32909BED86DEEAFE7864 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACCCB4D11E2A1BD9006F63B5 /* Build configuration list for PBXNativeTarget "PopupWithBlurBackgroundPresenterDemo" */;
 			buildPhases = (
+				3716AD89C4DB3EBAA0947BED /* [CP] Check Pods Manifest.lock */,
 				ACCCB4BB1E2A1BD8006F63B5 /* Sources */,
 				ACCCB4BC1E2A1BD8006F63B5 /* Frameworks */,
 				ACCCB4BD1E2A1BD8006F63B5 /* Resources */,
+				D8C23F4C6A5085B15F7042DC /* [CP] Embed Pods Frameworks */,
+				F908F2DBD85754E0D072C6F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3716AD89C4DB3EBAA0947BED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8C23F4C6A5085B15F7042DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopupWithBlurBackgroundPresenterDemo/Pods-PopupWithBlurBackgroundPresenterDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F908F2DBD85754E0D072C6F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopupWithBlurBackgroundPresenterDemo/Pods-PopupWithBlurBackgroundPresenterDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACCCB4BB1E2A1BD8006F63B5 /* Sources */ = {
@@ -274,6 +349,7 @@
 		};
 		ACCCB4D21E2A1BD9006F63B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EC1DA707AFCA715CDBB878E /* Pods-PopupWithBlurBackgroundPresenterDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MIBlurPopupDemo/Info.plist;
@@ -286,6 +362,7 @@
 		};
 		ACCCB4D31E2A1BD9006F63B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2759B3B3D4D666C096217773 /* Pods-PopupWithBlurBackgroundPresenterDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MIBlurPopupDemo/Info.plist;
