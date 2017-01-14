@@ -5,13 +5,13 @@ MIBlurPopup lets you create amazing popups with a blurred background
 )](https://developer.apple.com/iphone/index.action)
 [![Swift 3](https://img.shields.io/badge/Swift-3-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
-<img src="demo.gif" height="500"/>
+<img src="ReadmeResources/demo.gif" height="500"/>
 
 # Setup
 Copy the "MIBlurPopup.swift" into your project
 
-After made the view controller you want to present conform the protocol ```MIBlurPopupDelegate``` you can present it with just one line of code:
-```MIBlurPopup.show(popupViewController, on: <some view controller>)```
+After made the view controller you want to present conform the protocol ```MIBlurPopupDelegate``` you can present it with a line of code:
+```MIBlurPopup.show(popupViewController, on: <some view controller>)``` or, you can just set ```MIBlurPopupSegue``` as your custom segue's class like that <img src="ReadmeResources/customSegue.png" width="400"/>
 
 # Customization
 You can customize the popup behavior with the MIBlurPopupDelegate protocol
