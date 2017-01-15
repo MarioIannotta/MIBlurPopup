@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MIBlurPopup
+
 
 class PopupViewController: UIViewController {
 
@@ -30,9 +30,8 @@ class PopupViewController: UIViewController {
     var customInitialScaleAmmount: CGFloat!
     var customAnimationDuration: TimeInterval!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return customBlurEffectStyle == .dark ? .lightContent : .default
     }
     
     // MARK: - IBActions

@@ -1,6 +1,0 @@
-framework module Pods_PopupWithBlurBackgroundPresenterDemo {
-  umbrella header "Pods-PopupWithBlurBackgroundPresenterDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}

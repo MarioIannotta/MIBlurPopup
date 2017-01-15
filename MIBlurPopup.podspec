@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'MIBlurPopup'
-  spec.version          = '0.1.0'
+  spec.version          = '0.1.1'
   spec.license          = { :type => 'MIT', :file => 'LICENSE' }
   spec.homepage         = 'https://github.com/MarioIannotta/MIBlurPopup'
   spec.authors          = { 'Mario Iannotta' => 'info@marioiannotta.com' }

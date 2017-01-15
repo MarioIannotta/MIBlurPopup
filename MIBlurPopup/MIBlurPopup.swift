@@ -56,12 +56,14 @@ open class MIBlurPopup: NSObject {
         
         guard let presentedControllerView = transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
         
+        presentedControllerView.alpha = 0
+        
         transitionContext.containerView.addSubview(presentedControllerView)
         
         visualEffectBlurView.frame = transitionContext.containerView.bounds
-        transitionContext.containerView.insertSubview(visualEffectBlurView, at: 0)
+        visualEffectBlurView.alpha = 1
         
-        presentedControllerView.alpha = 0
+        transitionContext.containerView.insertSubview(visualEffectBlurView, at: 0)
         
         delegate?.popupView.alpha = 0
         delegate?.popupView.transform = CGAffineTransform(scaleX: delegate?.initialScaleAmmount ?? DefaultConfig.initialScaleAmmount, y: delegate?.initialScaleAmmount ?? DefaultConfig.initialScaleAmmount)
@@ -115,12 +117,14 @@ open class MIBlurPopup: NSObject {
                 
                 presentedControllerView.alpha = 0
                 
-                self.visualEffectBlurView.effect = nil
+                self.visualEffectBlurView.alpha = 0
                 self.delegate?.popupView.transform = CGAffineTransform(scaleX: self.delegate?.initialScaleAmmount ?? DefaultConfig.initialScaleAmmount, y: self.delegate?.initialScaleAmmount ?? DefaultConfig.initialScaleAmmount)
                 
             }, completion: {(completed: Bool) -> Void in
                 
+                self.visualEffectBlurView.effect = nil
                 self.visualEffectBlurView.removeFromSuperview()
+                
                 transitionContext.completeTransition(completed)
             
             }
