@@ -22,11 +22,11 @@ You can customize the popup behavior with the MIBlurPopupDelegate protocol
 - ```initialScaleAmmount: CGFloat // ∈(0, 1), this property will be used to calculate size that the popupView will have at the begin of the presentation and at the end of the dismiss. When != 1 it will induce a zoom-effect.```
 - ```animationDuration: TimeInterval // the transitions animations duration```
 
-#TODO
+# TODO
 * [x] Add a todo list
 * [x] Add storyboard support (eg: with custom segue)
 
-#Demo
+# Demo
 In this repository you can also find a demo.
 
 # Info
