@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MIBlurPopup
 
 class PopupViewController: UIViewController {
 
@@ -34,12 +33,18 @@ class PopupViewController: UIViewController {
         return customBlurEffectStyle == .dark ? .lightContent : .default
     }
     
+    // MARK: - Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        modalPresentationCapturesStatusBarAppearance = true
+    }
+    
     // MARK: - IBActions
     
     @IBAction func dismissButtonTapped(_ sender: Any) {
-    
         dismiss(animated: true)
-    
     }
 
 }
@@ -51,12 +56,15 @@ extension PopupViewController: MIBlurPopupDelegate {
     var popupView: UIView {
         return popupContentContainerView ?? UIView()
     }
+    
     var blurEffectStyle: UIBlurEffectStyle {
         return customBlurEffectStyle
     }
+    
     var initialScaleAmmount: CGFloat {
         return customInitialScaleAmmount
     }
+    
     var animationDuration: TimeInterval {
         return customAnimationDuration
     }
