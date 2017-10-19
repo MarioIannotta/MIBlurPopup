@@ -26,7 +26,6 @@
 		ACCCB4EB1E2A3E39006F63B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACCCB4EC1E2A3E39006F63B5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACCCB4F01E2A3E39006F63B5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F3D19813E659E71A6660395E /* Pods_PopupWithBlurBackgroundPresenterDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopupWithBlurBackgroundPresenterDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,14 +39,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		64BB32909BED86DEEAFE7864 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F3D19813E659E71A6660395E /* Pods_PopupWithBlurBackgroundPresenterDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AC349FA71F9913A40053D774 /* MIBlurPopup */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +53,6 @@
 				AC349FA71F9913A40053D774 /* MIBlurPopup */,
 				ACCCB4E51E2A3E39006F63B5 /* MIBlurPopupDemo */,
 				ACCCB4C01E2A1BD9006F63B5 /* Products */,
-				64BB32909BED86DEEAFE7864 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
