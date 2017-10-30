@@ -49,6 +49,18 @@ open class MIBlurPopup: NSObject {
         visualEffectBlurView.alpha = 1
         
         transitionContext.containerView.insertSubview(visualEffectBlurView, at: 0)
+        visualEffectBlurView.translatesAutoresizingMaskIntoConstraints = false
+        
+        transitionContext.containerView.addConstraints([
+            NSLayoutConstraint(item: visualEffectBlurView, attribute: .bottom, relatedBy: .equal,
+                               toItem: transitionContext.containerView, attribute: .bottom, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: visualEffectBlurView, attribute: .top, relatedBy: .equal,
+                               toItem: transitionContext.containerView, attribute: .top, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: visualEffectBlurView, attribute: .leading, relatedBy: .equal,
+                               toItem: transitionContext.containerView, attribute: .leading, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: visualEffectBlurView, attribute: .trailing, relatedBy: .equal,
+                               toItem: transitionContext.containerView, attribute: .trailing, multiplier: 1, constant: 0)
+            ])
         
         presentedControllerDelegate.popupView.alpha = 0
         presentedControllerDelegate.popupView.transform = CGAffineTransform(scaleX: presentedControllerDelegate.initialScaleAmmount,
