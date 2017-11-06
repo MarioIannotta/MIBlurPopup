@@ -3,7 +3,7 @@ MIBlurPopup lets you create amazing popups with a blurred background
 
 [![Platform](http://img.shields.io/badge/platform-ios-red.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
-[![Swift 3](https://img.shields.io/badge/Swift-3-orange.svg?style=flat)](https://developer.apple.com/swift/) 
+[![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)](https://developer.apple.com/swift/) 
 [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/MIBlurPopup.svg)](https://img.shields.io/cocoapods/v/MIBlurPopup.svg)
 
 <img src="ReadmeResources/demo.gif" height="500"/>
