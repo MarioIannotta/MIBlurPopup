@@ -42,6 +42,7 @@ open class MIBlurPopup: NSObject {
             else { return }
         
         presentedViewController.view.alpha = 0
+        presentedViewController.view.frame = transitionContext.containerView.bounds
         
         transitionContext.containerView.addSubview(presentedViewController.view)
         
