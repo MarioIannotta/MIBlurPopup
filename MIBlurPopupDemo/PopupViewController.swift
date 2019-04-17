@@ -25,7 +25,7 @@ class PopupViewController: UIViewController {
         }
     }
     
-    var customBlurEffectStyle: UIBlurEffectStyle!
+    var customBlurEffectStyle: UIBlurEffect.Style!
     var customInitialScaleAmmount: CGFloat!
     var customAnimationDuration: TimeInterval!
     
@@ -57,7 +57,7 @@ extension PopupViewController: MIBlurPopupDelegate {
         return popupContentContainerView ?? UIView()
     }
     
-    var blurEffectStyle: UIBlurEffectStyle {
+    var blurEffectStyle: UIBlurEffect.Style {
         return customBlurEffectStyle
     }
     

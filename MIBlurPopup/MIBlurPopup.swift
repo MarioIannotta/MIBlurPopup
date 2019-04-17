@@ -11,7 +11,7 @@ import UIKit
 
 public protocol MIBlurPopupDelegate: class {
     var popupView: UIView { get }
-    var blurEffectStyle: UIBlurEffectStyle { get }
+    var blurEffectStyle: UIBlurEffect.Style { get }
     var initialScaleAmmount: CGFloat { get }
     var animationDuration: TimeInterval { get }
 }
@@ -23,8 +23,7 @@ open class MIBlurPopup: NSObject {
     private var visualEffectBlurView = UIVisualEffectView()
     private var isPresenting = false
     
-    open static func show(_ viewControllerToPresent: UIViewController, on parentViewController: UIViewController) {
-        
+    public static func show(_ viewControllerToPresent: UIViewController, on parentViewController: UIViewController) {
         viewControllerToPresent.modalPresentationStyle = .overCurrentContext
         viewControllerToPresent.transitioningDelegate = shared
         
