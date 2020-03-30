@@ -215,7 +215,7 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="HI1-R6-fZ5" kind="custom" customClass="MIBlurPopupSegue" customModule="MIBlurPopupDemo" customModuleProvider="target" id="LMr-hZ-ntr"/>
+                                                        <segue destination="HI1-R6-fZ5" kind="custom" customClass="MIBlurPopupSegue" customModule="MIBlurPopup" id="LMr-hZ-ntr"/>
                                                     </connections>
                                                 </button>
                                             </subviews>

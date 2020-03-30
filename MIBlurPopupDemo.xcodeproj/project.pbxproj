@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC349FA91F9913A40053D774 /* MIBlurPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC349FA81F9913A40053D774 /* MIBlurPopup.swift */; };
 		ACC0DE6F1E2A955000B72A23 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE6E1E2A955000B72A23 /* PopupViewController.swift */; };
 		ACCCB4F11E2A3E39006F63B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCB4E61E2A3E39006F63B5 /* AppDelegate.swift */; };
 		ACCCB4F21E2A3E39006F63B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCCB4E71E2A3E39006F63B5 /* Assets.xcassets */; };
 		ACCCB4F31E2A3E39006F63B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCCB4E81E2A3E39006F63B5 /* LaunchScreen.storyboard */; };
 		ACCCB4F41E2A3E39006F63B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCCB4EA1E2A3E39006F63B5 /* Main.storyboard */; };
 		ACCCB4F81E2A3E39006F63B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCB4F01E2A3E39006F63B5 /* ViewController.swift */; };
+		BCBD44216390EB589CFD533B /* Pods_MIBlurPopupDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0D6386BD198FDF21F884B6 /* Pods_MIBlurPopupDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC349FA81F9913A40053D774 /* MIBlurPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIBlurPopup.swift; sourceTree = "<group>"; };
+		00D78FF4B03FCDC533FA369F /* Pods-MIBlurPopupDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIBlurPopupDemo.release.xcconfig"; path = "Target Support Files/Pods-MIBlurPopupDemo/Pods-MIBlurPopupDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2693AD1771C145E4ECF972FB /* Pods-MIBlurPopupDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIBlurPopupDemo.debug.xcconfig"; path = "Target Support Files/Pods-MIBlurPopupDemo/Pods-MIBlurPopupDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7C0D6386BD198FDF21F884B6 /* Pods_MIBlurPopupDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MIBlurPopupDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC0DE6E1E2A955000B72A23 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		ACCCB4BF1E2A1BD9006F63B5 /* MIBlurPopupDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIBlurPopupDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCCB4E61E2A3E39006F63B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,26 +35,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBD44216390EB589CFD533B /* Pods_MIBlurPopupDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AC349FA71F9913A40053D774 /* MIBlurPopup */ = {
-			isa = PBXGroup;
-			children = (
-				AC349FA81F9913A40053D774 /* MIBlurPopup.swift */,
-			);
-			path = MIBlurPopup;
-			sourceTree = "<group>";
-		};
 		ACCCB4B61E2A1BD8006F63B5 = {
 			isa = PBXGroup;
 			children = (
-				AC349FA71F9913A40053D774 /* MIBlurPopup */,
 				ACCCB4E51E2A3E39006F63B5 /* MIBlurPopupDemo */,
 				ACCCB4C01E2A1BD9006F63B5 /* Products */,
+				DCCF0E7D320CC4152EF4F7FB /* Pods */,
+				C4A0603E72E41F3E11C51D16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +74,23 @@
 			path = MIBlurPopupDemo;
 			sourceTree = "<group>";
 		};
+		C4A0603E72E41F3E11C51D16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C0D6386BD198FDF21F884B6 /* Pods_MIBlurPopupDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCCF0E7D320CC4152EF4F7FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2693AD1771C145E4ECF972FB /* Pods-MIBlurPopupDemo.debug.xcconfig */,
+				00D78FF4B03FCDC533FA369F /* Pods-MIBlurPopupDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACCCB4D11E2A1BD9006F63B5 /* Build configuration list for PBXNativeTarget "MIBlurPopupDemo" */;
 			buildPhases = (
+				336658DA39D9053B6C79E2E4 /* [CP] Check Pods Manifest.lock */,
 				ACCCB4BB1E2A1BD8006F63B5 /* Sources */,
 				ACCCB4BC1E2A1BD8006F63B5 /* Frameworks */,
 				ACCCB4BD1E2A1BD8006F63B5 /* Resources */,
+				6636A553B85FD4AC5025A3D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +161,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		336658DA39D9053B6C79E2E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MIBlurPopupDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6636A553B85FD4AC5025A3D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MIBlurPopupDemo/Pods-MIBlurPopupDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MIBlurPopup/MIBlurPopup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MIBlurPopup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MIBlurPopupDemo/Pods-MIBlurPopupDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACCCB4BB1E2A1BD8006F63B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -154,7 +212,6 @@
 				ACCCB4F81E2A3E39006F63B5 /* ViewController.swift in Sources */,
 				ACCCB4F11E2A3E39006F63B5 /* AppDelegate.swift in Sources */,
 				ACC0DE6F1E2A955000B72A23 /* PopupViewController.swift in Sources */,
-				AC349FA91F9913A40053D774 /* MIBlurPopup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +350,7 @@
 		};
 		ACCCB4D21E2A1BD9006F63B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2693AD1771C145E4ECF972FB /* Pods-MIBlurPopupDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MIBlurPopupDemo/Info.plist;
@@ -306,6 +364,7 @@
 		};
 		ACCCB4D31E2A1BD9006F63B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D78FF4B03FCDC533FA369F /* Pods-MIBlurPopupDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MIBlurPopupDemo/Info.plist;

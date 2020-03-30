@@ -1,0 +1,16 @@
+PODS:
+  - MIBlurPopup (1.0.0)
+
+DEPENDENCIES:
+  - MIBlurPopup (from `./`)
+
+EXTERNAL SOURCES:
+  MIBlurPopup:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  MIBlurPopup: 7e855df6a79d13bc0840519c2ec9bac50b1ac01a
+
+PODFILE CHECKSUM: 5da8b1f33f04e778332e25b68a6f8d72204737ba
+
+COCOAPODS: 1.8.4
