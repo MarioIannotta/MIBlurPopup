@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MIBlurPopup'
-  s.version          = '0.2.0'
-  s.summary          = 'MIBlurPopup lets you create amazing popups with a blurred background.'
+  s.version          = '1.0.0'
+  s.summary          = 'MIBlurPopup lets you create popups with a blurred background.'
   s.homepage         = 'https://github.com/MarioIannotta/MIBlurPopup'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mario Iannotta' => 'info@marioiannotta.com' }
