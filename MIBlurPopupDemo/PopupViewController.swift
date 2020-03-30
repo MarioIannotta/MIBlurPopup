@@ -25,12 +25,12 @@ class PopupViewController: UIViewController {
         }
     }
     
-    var customBlurEffectStyle: UIBlurEffect.Style!
+    var customBlurEffectStyle: UIBlurEffect.Style?
     var customInitialScaleAmmount: CGFloat!
     var customAnimationDuration: TimeInterval!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return customBlurEffectStyle == .dark ? .lightContent : .default
+        customBlurEffectStyle == .dark ? .lightContent : .default
     }
     
     // MARK: - Lifecycle
@@ -54,19 +54,19 @@ class PopupViewController: UIViewController {
 extension PopupViewController: MIBlurPopupDelegate {
     
     var popupView: UIView {
-        return popupContentContainerView ?? UIView()
+        popupContentContainerView ?? UIView()
     }
     
-    var blurEffectStyle: UIBlurEffect.Style {
-        return customBlurEffectStyle
+    var blurEffectStyle: UIBlurEffect.Style? {
+        customBlurEffectStyle
     }
     
     var initialScaleAmmount: CGFloat {
-        return customInitialScaleAmmount
+        customInitialScaleAmmount
     }
     
     var animationDuration: TimeInterval {
-        return customAnimationDuration
+        customAnimationDuration
     }
     
 }

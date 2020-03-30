@@ -15,24 +15,14 @@ class ViewController: UITableViewController {
     @IBOutlet weak var blurStyleSegmentControl: UISegmentedControl!
     @IBOutlet weak var animationDurationTextField: UITextField!
     @IBOutlet weak var initialScaleAmmountTextField: UITextField!
-    
-    // MARK: - Lifecycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     // MARK: - IBActions
     
-    @IBAction func animationDurationStepperValueChanged(_ sender: Any) {
-        guard let stepper = sender as? UIStepper else { return }
-        
+    @IBAction func animationDurationStepperValueChanged(_ stepper: UIStepper) {
         animationDurationTextField.text = String(stepper.value)
     }
     
-    @IBAction func initialScaleAmmountStepperValueChanged(_ sender: Any) {
-        guard let stepper = sender as? UIStepper else { return }
-        
+    @IBAction func initialScaleAmmountStepperValueChanged(_ stepper: UIStepper) {
         initialScaleAmmountTextField.text = String(stepper.value)
     }
     
@@ -43,10 +33,12 @@ class ViewController: UITableViewController {
         
         switch blurStyleSegmentControl.selectedSegmentIndex {
         case 0:
-            popupViewController.customBlurEffectStyle = .light
+            popupViewController.customBlurEffectStyle = nil
         case 1:
-            popupViewController.customBlurEffectStyle = .extraLight
+            popupViewController.customBlurEffectStyle = .light
         case 2:
+            popupViewController.customBlurEffectStyle = .extraLight
+        case 3:
             popupViewController.customBlurEffectStyle = .dark
         default:
             break
