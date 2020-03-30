@@ -11,7 +11,7 @@ import UIKit
 
 public protocol MIBlurPopupDelegate: class {
     var popupView: UIView { get }
-    var blurEffectStyle: UIBlurEffect.Style { get }
+    var blurEffectStyle: UIBlurEffect.Style? { get }
     var initialScaleAmmount: CGFloat { get }
     var animationDuration: TimeInterval { get }
 }
@@ -44,33 +44,35 @@ open class MIBlurPopup: NSObject {
         presentedViewController.view.frame = transitionContext.containerView.bounds
         
         transitionContext.containerView.addSubview(presentedViewController.view)
-        
-        visualEffectBlurView.frame = transitionContext.containerView.bounds
-        visualEffectBlurView.alpha = 1
-        
-        transitionContext.containerView.insertSubview(visualEffectBlurView, at: 0)
-        visualEffectBlurView.translatesAutoresizingMaskIntoConstraints = false
-        
-        transitionContext.containerView.addConstraints([
-            NSLayoutConstraint(item: visualEffectBlurView, attribute: .bottom, relatedBy: .equal,
-                               toItem: transitionContext.containerView, attribute: .bottom, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: visualEffectBlurView, attribute: .top, relatedBy: .equal,
-                               toItem: transitionContext.containerView, attribute: .top, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: visualEffectBlurView, attribute: .leading, relatedBy: .equal,
-                               toItem: transitionContext.containerView, attribute: .leading, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: visualEffectBlurView, attribute: .trailing, relatedBy: .equal,
-                               toItem: transitionContext.containerView, attribute: .trailing, multiplier: 1, constant: 0)
+
+        if let blurEffectStyle = presentedControllerDelegate.blurEffectStyle {
+            visualEffectBlurView.frame = transitionContext.containerView.bounds
+            visualEffectBlurView.alpha = 1
+
+            transitionContext.containerView.insertSubview(visualEffectBlurView, at: 0)
+            visualEffectBlurView.translatesAutoresizingMaskIntoConstraints = false
+
+            transitionContext.containerView.addConstraints([
+                NSLayoutConstraint(item: visualEffectBlurView, attribute: .bottom, relatedBy: .equal,
+                                   toItem: transitionContext.containerView, attribute: .bottom, multiplier: 1, constant: 0),
+                NSLayoutConstraint(item: visualEffectBlurView, attribute: .top, relatedBy: .equal,
+                                   toItem: transitionContext.containerView, attribute: .top, multiplier: 1, constant: 0),
+                NSLayoutConstraint(item: visualEffectBlurView, attribute: .leading, relatedBy: .equal,
+                                   toItem: transitionContext.containerView, attribute: .leading, multiplier: 1, constant: 0),
+                NSLayoutConstraint(item: visualEffectBlurView, attribute: .trailing, relatedBy: .equal,
+                                   toItem: transitionContext.containerView, attribute: .trailing, multiplier: 1, constant: 0)
             ])
-        
+
+            // blur view animation workaround: need that to avoid the "blur-flashes"
+            UIView.animate(withDuration: transitionDuration(using: transitionContext) * 0.75) {
+                self.visualEffectBlurView.effect = UIBlurEffect(style: blurEffectStyle)
+            }
+        }
+
         presentedControllerDelegate.popupView.alpha = 0
         presentedControllerDelegate.popupView.transform = CGAffineTransform(scaleX: presentedControllerDelegate.initialScaleAmmount,
                                                                             y: presentedControllerDelegate.initialScaleAmmount)
-        
-        // blur view animation workaround: need that to avoid the "blur-flashes"
-        UIView.animate(withDuration: transitionDuration(using: transitionContext) * 0.75) {
-            self.visualEffectBlurView.effect = UIBlurEffect(style: presentedControllerDelegate.blurEffectStyle)
-        }
-        
+
         UIView.animate(
             withDuration: transitionDuration(using: transitionContext),
             delay: 0.0,
